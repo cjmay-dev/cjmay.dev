@@ -32,6 +32,8 @@ Use the links to navigate to the setup docs for each item.
 * [GitHub](./docs/github/setup)
   * source code management
   * bootstrap secrets
+* [Discord](./docs/discord/setup)
+  * channel(s) for homelab alert webhooks
 * [AWS](./docs/aws/setup)
   * tfstate storage bucket
   * uptime kuma server
