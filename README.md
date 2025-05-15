@@ -17,6 +17,10 @@ With that intro out of the way, let's check out my homelab!
 
 TODO
 
+## Hardware
+
+TODO
+
 ## Foundational Infrastructure
 
 My Docker Compose project template relies on the infrastructure below. These systems are laid out in the general order they need to be set up in.
