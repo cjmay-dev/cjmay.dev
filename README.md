@@ -25,8 +25,12 @@ Use the links to navigate to the setup docs for each item.
 
 ### Cloud Platforms
 
+* [GitHub](./docs/github/setup)
+  * source code management
+  * bootstrap secrets
 * [AWS](./docs/aws/setup)
   * tfstate storage bucket
+  * uptime kuma server
 * [Backblaze](./docs/backblaze/setup)
   * tf application key
 * [Cloudflare](./docs/cloudflare/setup)
