@@ -23,6 +23,7 @@ These are the secrets that need to be set up to use my templates:
 | PROXMOX/ADMIN_SSH_PUBLIC_KEY | SSH pubkey for admin user on Linux VMs | N/A |
 | PROXMOX/ANSIBLE_SSH_PUBLIC_KEY | SSH pubkey for ansible user on Linux VMs | N/A |
 | PROXMOX/DATASTORE_ID | Name of the Proxmox datastore for VM storage | N/A |
+| PROXMOX/LOCAL_DOMAIN | Root domain for homelab internal network | N/A |
 | PROXMOX/PROXMOX_VE_API_TOKEN | API token for Proxmox Terraform user | TODO |
 | PROXMOX/PROXMOX_VE_ENDPOINT | HTTPS endpoint for the Proxmox web UI | N/A |
 | PROXMOX/PROXMOX_VE_INSECURE | Whether Proxmox HTTPS cert is self-signed | N/A |
