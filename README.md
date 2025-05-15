@@ -13,6 +13,52 @@ You'll notice privacy is not one of my goals. By making a showcase for my homela
 
 With that intro out of the way, let's check out my homelab!
 
-## Table of Contents
+## Network Diagram
+
+TODO
+
+## Foundational Infrastructure
+
+My Docker Compose project template relies on the infrastructure below. These systems are laid out in the general order they need to be set up in.
+
+Use the links to navigate to the setup docs for each item.
+
+### Cloud Platforms
+
+* [AWS](./docs/aws/setup)
+  * tfstate storage bucket
+* [Backblaze](./docs/backblaze/setup)
+  * tf application key
+* [Cloudflare](./docs/cloudflare/setup)
+  * DNS
+  * WAF
+  * tf application key
+* [Infisical](./docs/infisical/cloud/setup) (if not self-hosting)
+  * common secrets
+  * GitHub Actions OIDC
+
+### Physical Hosts
+
+* [Proxmox VE](./docs/proxmox/ve/setup)
+  * tailscale
+* [Proxmox Backup Server](./docs/proxmox/backup-server/setup)
+
+### Bootstrap VMs
+
+* [OPNsense Firewall](./docs/opnsense/setup)
+  * Interfaces:
+    * WAN (vmbr0)
+    * DMZ (vmbr1)
+  * unbound DNS
+  * DHCP w/ DNS registration
+  * tailscale
+* [Apt-Cacher-Ng Server](./docs/apt-cache/setup)
+  * DMZ static IP .2
+* [Infisical Server](./docs/infisical/self-hosted/setup) (if not using cloud version)
+  * tailscale
+  * common secrets
+  * GitHub Actions OIDC
+
+## Docker Compose template
 
 TODO
