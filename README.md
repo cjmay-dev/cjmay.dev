@@ -29,10 +29,10 @@ Use the links to navigate to the setup docs for each item.
 
 ### Cloud Platforms
 
-* [GitHub](./docs/github/setup)
+* GitHub
   * source code management
   * bootstrap secrets
-* [Discord](./docs/discord/setup)
+* Discord
   * channel(s) for homelab alert webhooks
 * [Tailscale](./docs/tailscale/setup)
   * ci to infrastructure SSH access
