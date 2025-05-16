@@ -55,7 +55,7 @@ Use the links to navigate to the setup docs for each item.
   * network interfaces
   * terraform user
   * tailscale
-* [Proxmox Backup Server](./docs/proxmox/backup-server/setup)
+* Proxmox Backup Server
 
 ### Bootstrap VMs
 
@@ -66,7 +66,7 @@ Use the links to navigate to the setup docs for each item.
   * unbound DNS
   * DHCP w/ DNS registration
   * tailscale
-* [Apt-Cacher-Ng Server](./docs/apt-cache/setup)
+* Apt-Cacher-Ng Server
   * DMZ static IP .2
 * [Infisical Server](./docs/infisical/self-hosted/setup) (if not using cloud version)
   * tailscale
