@@ -34,15 +34,17 @@ Use the links to navigate to the setup docs for each item.
   * bootstrap secrets
 * [Discord](./docs/discord/setup)
   * channel(s) for homelab alert webhooks
+* [Tailscale](./docs/tailscale/setup)
+  * ci to infrastructure SSH access
 * [AWS](./docs/aws/setup)
   * tfstate storage bucket
   * uptime kuma server
 * [Backblaze](./docs/backblaze/setup)
-  * tf application key
+  * application key for terraform
 * [Cloudflare](./docs/cloudflare/setup)
   * DNS
   * WAF
-  * tf application key
+  * application key for terraform
 * [Infisical](./docs/infisical/cloud/setup) (if not self-hosting)
   * common secrets
   * GitHub Actions OIDC
@@ -50,6 +52,8 @@ Use the links to navigate to the setup docs for each item.
 ### Physical Hosts
 
 * [Proxmox VE](./docs/proxmox/ve/setup)
+  * network interfaces
+  * terraform user
   * tailscale
 * [Proxmox Backup Server](./docs/proxmox/backup-server/setup)
 
