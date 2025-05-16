@@ -36,12 +36,12 @@ Use the links to navigate to the setup docs for each item.
   * channel(s) for homelab alert webhooks
 * [Tailscale](./docs/tailscale/setup)
   * ci to infrastructure SSH access
-* [AWS](./docs/aws/setup)
+* AWS
   * tfstate storage bucket
   * uptime kuma server
-* [Backblaze](./docs/backblaze/setup)
+* Backblaze
   * application key for terraform
-* [Cloudflare](./docs/cloudflare/setup)
+* Cloudflare
   * DNS
   * WAF
   * application key for terraform
