@@ -14,7 +14,7 @@ I use Terraform to provision resources in Proxmox, and I grant it access to PVE 
 
 To set up the user, go to Datacenter > Permissions > Users, and create a pam user called "terraform".
 
-Next, go to Datacenter > Permissions > API Tokens, and create an API token for the terraform user. Save the token secret to add to [common secrets](/docs/infisical/common-secrets.md) later.
+Next, go to Datacenter > Permissions > API Tokens, and create an API token for the terraform user. Save the token secret to add to [common secrets](/docs/infisical/common-secrets) later.
 
 ## tailscale
 
