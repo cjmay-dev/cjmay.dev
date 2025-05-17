@@ -61,9 +61,9 @@ Use the links to navigate to the setup docs for each item.
 
 * [OPNsense Firewall](./docs/opnsense/setup)
   * Interfaces:
-    * WAN (vmbr0)
-    * DMZ (vmbr1)
-    * ADMIN (vmbr2)
+    * WAN
+    * DMZ
+    * ADMIN
   * unbound DNS
   * DHCP w/ DNS registration
   * tailscale
