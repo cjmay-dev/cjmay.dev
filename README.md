@@ -63,6 +63,7 @@ Use the links to navigate to the setup docs for each item.
   * Interfaces:
     * WAN (vmbr0)
     * DMZ (vmbr1)
+    * ADMIN (vmbr2)
   * unbound DNS
   * DHCP w/ DNS registration
   * tailscale
