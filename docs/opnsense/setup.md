@@ -32,13 +32,18 @@ Unbound DNS must be configured for DHCP DNS registration. Make sure the followin
 
 ## tailscale
 
-Follow [Tailscale's guide](https://tailscale.com/kb/1097/install-opnsense) to install tailscaled on OPNsense. Make sure you have at least 8GB of storage space available before installing tailscaled and its dependencies. It may take a while to build everything.
+OPNsense now includes an official plugin for tailscale called `os-tailscale` which needs to be installed. Once installed, go to the tailscale console.
 
-Once tailscale is installed, run the following commands to start the tailscaled service, join the tailnet, advertise a route to the DMZ, and serve the OPNsense web UI:
+In the tailscale console, generate an auth key for OPNsense under Settings > Keys. Give the auth key a description and add `infrastructure` as a default tag on the key.
 
-```bash
-service tailscaled enable
-service tailscaled start
-tailscale up --hostname="opnsense" --advertise-tags="infrastructure" --advertise-routes="10.0.0.0/24"
-tailscale serve --bg http://localhost:80
-```
+Back in OPNsense, go to VPN > Tailscale > Authentication and add the generated key to the Pre-authentication Key field. Next, go to VPN > Tailscale > Settings. Enable Tailscale, disable "Accept DNS", and enable "Advertise Exit Node". Click the "Apply" button to join the tailnet.
+
+Next, go to the "Advertised Routes" on the same page, and add the following routes:
+
+* 10.0.0.0/24 (DMZ)
+
+Click the "Apply" button again, and then go back to the tailscale console.
+
+In the Machines tab of the tailscale console, locate opnsense, edit its route settings, and accept the route and exit node advertisements.
+
+One more tailscale-related thing to configure in OPNsense is NAT-PMP. If there are any devices on OPNsense's LAN interfaces that are using tailscale, then [NAT-PMP must be enabled](https://tailscale.com/kb/1097/install-opnsense#nat-pmp) on those interfaces to allow direct connections. Without NAT-PMP, those devices can only use DERP relays.
