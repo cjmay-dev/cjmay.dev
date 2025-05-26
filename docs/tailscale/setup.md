@@ -34,3 +34,11 @@ The CI/CD pipeline needs an auth key to temporarily join the tailnet without an 
 ![image](https://github.com/user-attachments/assets/3565024f-ffb2-4eaf-a74b-59b5ddda5be9)
 
 Once the OAuth credentials are created, save them for later so they can be added to the Infisical [common secrets](/docs/infisical/common-secrets).
+
+## Machines
+
+The following machines need to be added to the tailnet for my templates to work. Use the provided links to see the tailscale setup documentation for each machine.
+
+* [Proxmox](/docs/proxmox/ve/setup#tailscale)
+* [OPNsense](/docs/opnsense/setup#tailscale)
+* [Infisical](/docs/infisical/self-hosted/setup#tailscale) (if self-hosting)

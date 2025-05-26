@@ -30,7 +30,7 @@ Unbound DNS must be configured for DHCP DNS registration. Make sure the followin
 * Register ISC DHCP4 Leases
 * Set DHCP Domain Override to your internal domain
 
-## Tailscale
+## tailscale
 
 Follow [Tailscale's guide](https://tailscale.com/kb/1097/install-opnsense) to install tailscaled on OPNsense. Make sure you have at least 8GB of storage space available before installing tailscaled and its dependencies. It may take a while to build everything.
 
