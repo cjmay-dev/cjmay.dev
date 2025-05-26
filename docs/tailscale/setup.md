@@ -1,6 +1,6 @@
 # Tailscale
 
-Tailscale is the glue that allows my CI/CD pipeline to access the private parts of my network. It also allows me to do remote administration when I'm not on my home network.
+Tailscale is the glue that allows my CI/CD pipeline to access parts of my infrastructure. It also allows me to do remote administration when I'm not on my home network.
 
 ## Access controls
 
@@ -8,14 +8,12 @@ I won't share the details of my access controls config, but the following is gen
 
 ### Tags
 
-* ci
-* infrastructure
-* services
+* ci (ephemeral runners)
+* infrastructure (proxmox, infisical)
 
 ### ACLs
 
 * ci to infrastructure
-* ci to services
 
 ### SSH
 
@@ -23,15 +21,15 @@ I won't share the details of my access controls config, but the following is gen
 
 ### Funnel
 
-* default / owners can configure
+* default (owners can configure)
 
 HTTPS certificates must also be enabled under DNS > HTTPS Certificates
 
 ## OAuth Client
 
-My CI/CD pipeline needs an auth key to join devices to my tailnet without an interactive logon. OAuth client credentials can be created under Settings > OAuth clients. Give the client a description and enable the following permissions:
+The CI/CD pipeline needs an auth key to temporarily join the tailnet without an interactive logon. OAuth client credentials can be created under Settings > OAuth clients. Give the client a description and enable the following permissions:
 
-* Auth Keys - R/W - tag:ci,tag:services
+* Auth Keys - R/W - tag:ci
 
 ![image](https://github.com/user-attachments/assets/3565024f-ffb2-4eaf-a74b-59b5ddda5be9)
 
