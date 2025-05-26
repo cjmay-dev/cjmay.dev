@@ -64,11 +64,12 @@ Use the links to navigate to the setup docs for each item.
     * WAN
     * DMZ
     * ADMIN
+  * DHCP
   * unbound DNS
-  * DHCP w/ DNS registration
+    * DHCP registrations
   * tailscale
 * Apt-Cacher-Ng Server
-  * DMZ static IP .2
+  * DMZ DHCP
 * Monitoring Server
   * ADMIN DHCP
   * beszel
