@@ -30,7 +30,6 @@ These are the secrets that need to be set up to use my templates:
 | PROXMOX/PROXMOX_VE_SSH_KEY | SSH key for Proxmox Terraform user | TODO |
 | TAILSCALE/TS_OAUTH_CLIENT_ID | OAuth client ID for joining tailnet | N/A |
 | TAILSCALE/TS_OAUTH_SECRET | OAuth client secret for joining tailnet | N/A |
-| TFSTATE/AWS_ACCESS_KEY_ID | Access key to Terraform state storage bucket | listBuckets, readObjects, writeObjects, deleteObjects |
-| TFSTATE/AWS_SECRET_ACCESS_KEY | Access key to Terraform state storage bucket | listBuckets, readObjects, writeObjects, deleteObjects |
+| TFSTATE/AWS_ROLE_ARN | ARN for OIDC auth to Terraform state storage bucket | N/A |
 | TFSTATE/TFSTATE_BUCKET | S3 URI for tfstate bucket | N/A |
 | TFSTATE/TFSTATE_BUCKET_REGION | S3 region for tfstate bucket | N/A |
