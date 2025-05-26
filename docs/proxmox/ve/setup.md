@@ -23,6 +23,6 @@ Next, go to Datacenter > Permissions > API Tokens, and create an API token for t
 Log into the pve console as root, and install the [tailscale](tailscale.com) client on the Proxmox host. Once installed, run the following commands to connect pve to the tailnet, enable the tailscale SSH server, and serve the Proxmox VE web ui on the tailnet:
 
 ```bash
-tailscale up --ssh
-tailscale serve --bg=true https+insecure://localhost:8006
+tailscale up --ssh --advertise-tags="infrastructure"
+tailscale serve --bg https+insecure://localhost:8006
 ```
