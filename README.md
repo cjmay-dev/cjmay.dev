@@ -38,7 +38,7 @@ Use the links to navigate to the setup docs for each item.
   * ci to infrastructure SSH access
 * AWS
   * tfstate storage bucket
-  * uptime kuma server
+  * github actions terraform federation
 * Backblaze
   * application key for terraform
 * Cloudflare
@@ -69,7 +69,14 @@ Use the links to navigate to the setup docs for each item.
   * tailscale
 * Apt-Cacher-Ng Server
   * DMZ static IP .2
+* Monitoring Server
+  * ADMIN DHCP
+  * beszel
+  * dozzle
+* Security Server
+  * undocumented
 * [Infisical Server](./docs/infisical/self-hosted/setup) (if not using cloud version)
+  * ADMIN DHCP
   * tailscale
   * common secrets
   * GitHub Actions OIDC

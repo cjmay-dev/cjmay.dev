@@ -6,7 +6,9 @@ Proxmox is the hypervisor that runs pretty much everything in my homelab. There 
 
 When Proxmox VE was set up, it should have created a Linux Bridge `vmbr0` bound to a physical Network Device on the server.
 
-Create an additional [OVS Bridge](https://pve.proxmox.com/wiki/Open_vSwitch) interface called `vmbr1` that will serve as an OPNsense LAN interface. When creating `vmbr1`, add the comment "OPNsense DMZ", click "Create", and then "Apply Configuration".
+Create an additional [OVS Bridge](https://pve.proxmox.com/wiki/Open_vSwitch) interface called `vmbr1` that will serve as the OPNsense DMZ interface. When creating `vmbr1`, add the comment "OPNsense DMZ", click "Create", and then "Apply Configuration".
+
+Perform the previous step one more time to create another interface called `vmbr2` that will serve as the OPNsense ADMIN interface.
 
 ## terraform user
 
