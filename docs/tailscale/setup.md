@@ -15,10 +15,6 @@ I won't share the details of my access controls config, but the following is gen
 
 * ci to infrastructure
 
-### SSH
-
-* ci to infrastructure
-
 ### Funnel
 
 * default (owners can configure)
