@@ -23,7 +23,7 @@ TODO
 
 ## Foundational Infrastructure
 
-My Docker Compose project template relies on the infrastructure below. These systems are laid out in the general order they need to be set up in.
+My app templates rely on the infrastructure below. These systems are laid out in the general order they need to be set up in. Supporting VMs are not strictly necessary for my templates to work, but they help keep things running smoothly.
 
 Use the links to navigate to the setup docs for each item.
 
@@ -54,33 +54,34 @@ Use the links to navigate to the setup docs for each item.
 * [Proxmox VE](./docs/proxmox/ve/setup)
   * network interfaces
   * terraform user
-  * tailscale
+  * tailscale for CI access
 * Proxmox Backup Server
 
-### Bootstrap VMs
+### Required VMs
 
 * [OPNsense Firewall](./docs/opnsense/setup)
   * Interfaces:
     * WAN
     * DMZ
     * ADMIN
-  * DHCP
+  * ISC DHCP
   * unbound DNS
     * DHCP registrations
-  * tailscale
+  * tailscale for CI access
+* [Infisical Server](./docs/infisical/self-hosted/setup) (if not using cloud version)
+  * common secrets
+  * GitHub Actions OIDC
+  * tailscale for CI access
+
+### Supporting VMs
+
 * Apt-Cacher-Ng Server
-  * DMZ DHCP
+  * cache packages for docker hosts
 * Monitoring Server
-  * ADMIN DHCP
   * beszel
   * dozzle
 * Security Server
   * undocumented
-* [Infisical Server](./docs/infisical/self-hosted/setup) (if not using cloud version)
-  * ADMIN DHCP
-  * tailscale
-  * common secrets
-  * GitHub Actions OIDC
 
 ## Docker Compose template
 
